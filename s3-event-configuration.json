@@ -1,0 +1,22 @@
+{
+  "LambdaFunctionConfigurations": [
+    {
+      "LambdaFunctionArn": "arn:aws:lambda:us-east-2:109958552134:function:pii-redaction-function",
+      "Events": ["s3:ObjectCreated:*"],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "prefix",
+              "Value": "raw/"
+            },
+            {
+              "Name": "suffix",
+              "Value": ".json"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

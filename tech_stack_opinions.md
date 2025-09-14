@@ -35,10 +35,7 @@ New-Item -Path "TECHNOLOGY_JUSTIFICATION.md" -ItemType File -Value @"
 - Designed for document extraction, not PII detection
 - More expensive for text-only processing
 
-### Why not SageMaker?
-- Overkill for this use case
-- Requires ML expertise
-- Higher operational overhead
+
 
 ### Why not EC2/ECS?
 - Requires infrastructure management

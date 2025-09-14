@@ -14,8 +14,8 @@ s3_client = boto3.client('s3')
 comprehend_client = boto3.client('comprehend')
 
 # Environment variables
-RAW_BUCKET = os.environ.get('S3_RAW_BUCKET', 'voice-metadata-raw')
-CLEAN_BUCKET = os.environ.get('S3_CLEAN_BUCKET', 'voice-metadata-clean')
+RAW_BUCKET = os.environ.get('S3_RAW_BUCKET', 'chrisbucketraw')
+CLEAN_BUCKET = os.environ.get('S3_CLEAN_BUCKET', 'chrisbucketclean')
 BATCH_SIZE = int(os.environ.get('BATCH_SIZE', '25'))
 
 # Configure logging
