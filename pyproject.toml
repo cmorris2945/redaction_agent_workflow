@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "redactio-agent"
+version = "0.1.0"
+description = "AWS Lambda function for PII redaction using Amazon Comprehend"
+authors = ["Chris Morris"]
+readme = "README.md"
+packages = [{include = "redactio_agent", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.28.0"
+aws-lambda-powertools = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+pytest-cov = "^4.0.0"
+moto = "^4.0.0"
+black = "^23.0.0"
+ruff = "^0.0.280"
+pre-commit = "^3.0.0"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+select = ["E", "F", "B", "I", "C", "W"]
+ignore = ["E203", "W503"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=src --cov-report=html --cov-report=term"
