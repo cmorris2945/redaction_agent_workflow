@@ -1,4 +1,4 @@
-# PII Redaction Agent.  ## "I tried to organize this. Please look in all the appropriate directories to find directions, explanations, code/scripts and diagrams. You can even run this yourself but I tested this plenty of times."
+# PII Redaction Agent. "I tried to organize this. Please look in all the appropriate directories to find directions, explanations, code/scripts and diagrams. You can even run this yourself but I tested this plenty of times."
 
 
 A serverless AWS-based system for automatically detecting and redacting Personally Identifiable Information (PII) from JSON verbatim data using AWS Comprehend, Lambda, and S3. 
