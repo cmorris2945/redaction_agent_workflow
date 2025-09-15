@@ -91,7 +91,7 @@ This stack is event-driven, scales automatically with incoming files, and aligns
 
 
 ## Poetry
-**Why we used it:**
+**Why I used it:**
 - **Dependency Management:** Clean separation of production vs. dev dependencies
 - **Virtual Environment:** Automatic venv creation and management with `poetry shell`
 - **Lock Files:** `poetry.lock` ensures reproducible builds across environments
