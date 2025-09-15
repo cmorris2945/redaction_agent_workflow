@@ -6,6 +6,11 @@ A serverless AWS-based system for automatically detecting and redacting Personal
 
 This system automatically processes JSON files uploaded to S3, detects PII using AWS Comprehend, redacts sensitive information, and saves clean data to a separate bucket.
 
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/91fb02f6-1621-42d4-9998-e13064ad1953" />
+
+
+
 **Supported PII Types:**
 - Names (PERSON)
 - Email addresses (EMAIL)
